@@ -1,15 +1,18 @@
 import React from 'react';
 import './App.css';
-import Heading from './components/Heading'
 import { ButtonWrapper } from './components/Button'
-
+import mainBcg from './images/mainBcg.jpg'
+import secondaryBcg from './images/secondaryBcg.jpg'
+import Header from './components/Header'
 
 function App() {
   return (
-    <div>
-      <ButtonWrapper color="#f15025" big>App.js</ButtonWrapper>
-      <Heading />
-    </div>
+    <>
+      <Header img={mainBcg} title="Welcome to our coffee shop">
+        <ButtonWrapper>Click me!!</ButtonWrapper>
+      </Header>
+      <Header/>
+    </>
   );
 }
 
