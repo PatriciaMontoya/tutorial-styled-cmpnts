@@ -7,7 +7,7 @@ export default function Heading() {
     return (
         <div>
             <h1 className="third"> I'm a separate css file </h1>
-            <ButtonWrapper> Heading.js </ButtonWrapper>
+            <ButtonWrapper color="red" background="blue"> Heading.js </ButtonWrapper>
         </div>
     )
 }

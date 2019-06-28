@@ -7,7 +7,7 @@ import { ButtonWrapper } from './components/Button'
 function App() {
   return (
     <div>
-      <ButtonWrapper>App.js</ButtonWrapper>
+      <ButtonWrapper color="#f15025" big>App.js</ButtonWrapper>
       <Heading />
     </div>
   );
