@@ -3,7 +3,8 @@ import './App.css';
 import { ButtonWrapper } from './components/Button'
 import mainBcg from './images/mainBcg.jpg'
 import secondaryBcg from './images/secondaryBcg.jpg'
-import Header from './components/Header'
+import { Header } from './components/Header'
+import { Hero } from './components/Header'
 import Banner from './components/Banner'
 import { createGlobalStyle } from 'styled-components'
 
@@ -28,7 +29,7 @@ function App() {
             <ButtonWrapper>Click me!!</ButtonWrapper>
         </Banner>
       </Header>
-      <Header/>
+      <Hero img={secondaryBcg}/>
     </>
   );
 }
