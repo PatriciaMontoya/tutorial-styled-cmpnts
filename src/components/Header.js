@@ -2,13 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import secondaryBcg from '../images/secondaryBcg.jpg'
 
-export default function Header({img, title, children}) {
+export default function Header({img, children}) {
     return (
         <HeaderWrapper img={img}>
-            <div className="banner">
-                <h1>{title}</h1>
-                {children}
-            </div>
+            {children}
         </HeaderWrapper>
     )
 }
@@ -19,21 +16,9 @@ const HeaderWrapper = styled.header`
     display: flex;
     align-items: center;
     justify-content: center;
-    .banner {
-        text-align: center;
-        h1 {
-            color: black;
-            font-size: 3rem;
-            text-transform: uppercase;
-            transition: all 2s linear;
-            &:hover {
-                color: red;
-            }
-        }
-    }
+    
 `
 
 Header.defaultProps = {
-    img: secondaryBcg,
-    title: 'Fresh coffee is the best'
+    img: secondaryBcg
 }
