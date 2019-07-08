@@ -1,12 +1,13 @@
 import React from 'react'
-import { Box } from './components/AnimatedBox'
+import { MainBanner, SecondBanner } from './components/Media'
 
 class App extends React.Component {
 
   render() {
     return (
       <div>
-       <Box />
+        <MainBanner background="pink">MainBanner</MainBanner>
+        <SecondBanner />
       </div>
     );
   }
